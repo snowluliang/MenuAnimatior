@@ -17,6 +17,7 @@
         </activity>
         <activity android:name=".Action"/>
         <activity android:name=".ValueActivity"/>
+        <activity android:name=".FanActivity"/>
     </application>
 
 </manifest>

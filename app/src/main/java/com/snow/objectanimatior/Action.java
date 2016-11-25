@@ -2,21 +2,11 @@ package com.snow.objectanimatior;
 
 import android.animation.ObjectAnimator;
 import android.app.Activity;
-import android.graphics.Path;
-import android.media.Image;
 import android.os.Build;
 import android.os.Bundle;
-import android.provider.ContactsContract;
 import android.support.annotation.RequiresApi;
-import android.support.v4.view.animation.FastOutLinearInInterpolator;
 import android.view.View;
-import android.view.animation.AccelerateInterpolator;
-import android.view.animation.AnimationSet;
-import android.view.animation.AnticipateInterpolator;
 import android.view.animation.BounceInterpolator;
-import android.view.animation.CycleInterpolator;
-import android.view.animation.DecelerateInterpolator;
-import android.view.animation.OvershootInterpolator;
 import android.widget.ImageView;
 
 import java.util.ArrayList;
@@ -85,7 +75,9 @@ public class Action extends Activity implements View.OnClickListener {
             case R.id.iv_f:
 
                 break;
+            default:
 
+                break;
         }
 
     }
@@ -95,8 +87,8 @@ public class Action extends Activity implements View.OnClickListener {
             ObjectAnimator animator =
                     ObjectAnimator.ofFloat(imgList.get(i), "translationY", i * 150f, 0f);
             animator.setDuration(800);
-            //animator.setInterpolator(new OvershootInterpolator());
             animator.start();
+            //animator.setInterpolator(new OvershootInterpolator());
            /* ObjectAnimator animator2 =
                     ObjectAnimator.ofFloat(imgList.get(i), "translationX", i * 100f, 0f);
             animator2.setDuration(800);
@@ -113,15 +105,14 @@ public class Action extends Activity implements View.OnClickListener {
             ObjectAnimator animator =
                     ObjectAnimator.ofFloat(imgList.get(i), "translationY", 0, i * 150);
             animator.setDuration(700);
-            //animator.setInterpolator(new OvershootInterpolator());//动画偏出一点再回来.
-            //animator.setInterpolator(new AnticipateInterpolator());//说不出来动画
-            //animator.setInterpolator(new AccelerateInterpolator());//加速动画
-           //animator.setInterpolator(new DecelerateInterpolator());//减速动画
-            //animator.setInterpolator(new FastOutLinearInInterpolator());//开始的时候加速
             animator.setInterpolator(new BounceInterpolator());//落地回弹效果
             animator.setStartDelay(i * 200);
             animator.start();
-
+            //animator.setInterpolator(new OvershootInterpolator());//动画偏出一点再回来.
+            //animator.setInterpolator(new AnticipateInterpolator());//说不出来动画
+            //animator.setInterpolator(new AccelerateInterpolator());//加速动画
+            //animator.setInterpolator(new DecelerateInterpolator());//减速动画
+            //animator.setInterpolator(new FastOutLinearInInterpolator());//开始的时候加速
             /*ObjectAnimator animator2 =
                     ObjectAnimator.ofFloat(imgList.get(i), "translationX", 0, i * 100);
             animator2.setDuration(700);

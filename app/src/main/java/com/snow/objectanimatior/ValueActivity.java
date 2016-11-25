@@ -7,9 +7,7 @@ import android.view.View;
 import android.view.animation.BounceInterpolator;
 import android.widget.Button;
 
-/**
- * Created by snow on 2016/11/22.
- */
+
 
 public class ValueActivity extends Activity {
     @Override
