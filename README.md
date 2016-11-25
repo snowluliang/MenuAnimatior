@@ -27,6 +27,10 @@ private void back() {
     }
 ```
 
+
+![](https://github.com/snowluliang/repository/blob/master/184345.gif)
+![](https://github.com/snowluliang/repository/blob/master/185004.gif)
+
 - 新增扇形动画
 ```
 AnimationSet set = new AnimationSet(true);
@@ -75,5 +79,4 @@ AnimationSet set = new AnimationSet(true);
 
             child.startAnimation(set);
 ```
-![](https://github.com/snowluliang/repository/blob/master/184345.gif)
-![](https://github.com/snowluliang/repository/blob/master/185004.gif)
+
